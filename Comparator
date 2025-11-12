@@ -43,7 +43,8 @@ public class Comparator_Demo {
 		list.add("bye");
 		list.add("mumbai");
 		list.sort(null);
-		list.sort(new MyStringCoparator());
+		//list.sort(new MyStringCoparator()); we can use lambda also
+		list.sort((a,b)->b.length() -a.length());
 		System.out.println(list);
 	}
 
